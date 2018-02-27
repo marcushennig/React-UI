@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import MyClass from './Shared/test'
 
-class App extends Component {
+class App extends Component
+{
 
   render() {
 
     let x = new MyClass(2);
     return (
-        <h1>Hello number {x.getResult()+3}</h1>
+        <h1>Hello Pi {x.getResult()}</h1>
     );
   }
 }
