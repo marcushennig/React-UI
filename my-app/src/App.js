@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import MyClass from './Shared/test'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MyAwesomeReactComponent from './components/MyAwesomeReactComponent';
+import MyClass from './shared/test'
 
 class App extends Component
 {
@@ -8,7 +10,9 @@ class App extends Component
 
     let x = new MyClass(2);
     return (
-        <h1>Hello Pi {x.getResult()}</h1>
+      <MuiThemeProvider>
+        <MyAwesomeReactComponent />
+      </MuiThemeProvider>
     );
   }
 }
